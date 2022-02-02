@@ -52,7 +52,7 @@
     
 *    **for (;;){** > // Loop that any conditions can pass
 
-*        **printf("%d\n",y);** > // print a value after use function addTen
+*    **printf("%d\n",y);** > // print a value after use function addTen
 
 *    **}**
 
