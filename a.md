@@ -3,8 +3,8 @@
 **#include <stdio.h>**  >//header file that include input/output
 **#include <stdlib.h>**  >//header file that include std lib
 
-int main(){  >// main function
-    >// int used to store decimal numbers.
+*int main(){  >// main function*
+    >// *int used to store decimal numbers.*
     >// float or double used to store floating point numbers.
     >// char used to store character.
 
