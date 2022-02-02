@@ -1,122 +1,126 @@
 # Lecture Lab three
 
-#include<stdio.h>
+### Address
 
-int main(){
+* **#include<stdio.h>**
 
-    int a = 100;
+* **int main(){**
 
-    int b = 0144; //8
+*    **int a = 100;** // give a to 100
 
-    int c = 0x64; //16
+*    **int b = 0144;** // give b to base number 8
 
-    int d = 0b01101;//2
+*    **int c = 0x64;** // give c to base number 16
 
-    printf("%d %d %d %d",a,b,c,d);
+*    **int d = 0b01101;** // give d to binary or base number 2
 
-
-
-    int x = 100;
-
-    printf("Value of x = %d\n",x);
-
-    printf("reference of x = %lu\n",&x); //address
-
-    printf("reference of x = %p\n", &x); //16
+*    **printf("%d %d %d %d",a,b,c,d);** // print result
 
 
 
-    int data[10]; = {1,2,3,4,5}
+*    **int x = 100;** // give x to 100
 
-    printf("data[0] = %d\n",data[0]); // 1
+*    **printf("Value of x = %d\n",x);** // print std value x
 
-    printf("reference data[0] = %p\n", &data[0]); //16
+*    **printf("reference of x = %lu\n",&x);** //print address of x
 
-    printf("reference data = %p\n", data); //16
-
-
-
-    int *ptr;
-
-    ptr = &x;
-
-    int *arrPtr = data;
+*    **printf("reference of x = %p\n", &x);** //print address of x in base 16
 
 
 
-    printf("value of ptr = %p\n",ptr); // 16
+*    **int data[10]; = {1,2,3,4,5}** // given value in array
 
-    printf("reference of ptr = %p\n", &ptr); // 16
+*    **printf("data[0] = %d\n",data[0]);** // index 0 is 1
 
-    printf("value of reference *ptr = %d\n", *ptr); //100
+*    **printf("reference data[0] = %p\n", &data[0]);** // address index is base 16
 
-    printf("arrPtr = %p\n", arrPtr); // 16
+*    **printf("reference data = %p\n", data);** //if not access index it is 0
 
-    printf("arrPtr = %d\n", *arrPtr); // 1
+### Pointer
 
+*    **int *ptr;** // given ptr as pointer
 
+*    **ptr = &x;** // ptr point to address x
 
-    arrPtr += 1;
-
-
-
-    printf("arrPtr = %p\n", arrPtr); // 16 4
-
-    printf("arrPtr = %d\n", *arrPtr); // 2
+*    **int *arrPtr = data;** // pointer arrPtr point to data
 
 
-    int x;
 
-    char s[10];
+*    **printf("value of ptr = %p\n",ptr);** // value of ptr is base 16
 
-    char c;
+*    **printf("reference of ptr = %p\n", &ptr);** // value of ptr is address base 16
 
+*    **printf("value of reference *ptr = %d\n", *ptr);** value that ptr point is 100
 
-    scanf("%d %s", &x,s);
+*    **printf("arrPtr = %p\n", arrPtr);** // value of arrPtr is address base 16
 
-
-    printf("result x = %d, s = %s",x,s); //12345 , carry
-
-
-    scanf("%d", &x);
-
-    scanf("\n%c", &c);
+*    **printf("arrPtr = %d\n", *arrPtr);** // value that arrPtr point is 1
 
 
-    printf("result x = %d, c = %c",x,c);
+
+*    **arrPtr += 1;** // plus value arrPtr by one
 
 
-    void printString(char *s){
 
-        for(char *p = s;*p != '\0'; p++){
+*    **printf("arrPtr = %p\n", arrPtr);** // value of arrPtr is address plus 4 byte
 
-            printf("[%p] = %c\n", p, *p);
+*    **printf("arrPtr = %d\n", *arrPtr);** // value that arrPtr point increase one(2)
 
-        }
+### scanf();
 
-    }
+*    **int x;** // given x as int
 
-    void encrypt(char *s){
+*    **char s[10];** // given char array 10
 
-        for(char *p = s;*p != '\0'; p++){
+*    **char c;** // given c as char
 
-            *p += 1;
 
-        }
+*    **scanf("%d %s", &x,s);** // input using scanf by input %s
 
-    }
+
+*    **printf("result x = %d, s = %s",x,s);** // input any number , input any text
+
+
+*    **scanf("%d", &x);** // input any number
+
+*    **scanf("\n%c", &c);** // use \n to protect %c coz scanf can mem enter
+
+
+*    **printf("result x = %d, c = %c",x,c);** // print result (number,one character)
+
+### Function Pototype
+
+*    **void printString(char *s){** // void means this function will not return
+
+*        **for(char *p = s;*p != '\0'; p++){** // for loop to print string and addres
+
+*            **printf("[%p] = %c\n", p, *p);** // print address and string
+
+*        **}**
+
+*    **}**
+
+*    **void encrypt(char *s){** // this function plus one
+
+*        **for(char *p = s;*p != '\0'; p++){** // loop plus one
+
+*            ***p += 1;** // plus one
+
+*        **}**
+
+*    **}**
 
     
-    int main(){
+*    **int main(){**
 
-        char s[100];
+*        **char s[100];** // given s as char array
 
-        scanf("%s",s);
+*        **scanf("%s",s);** // input %s as text
 
-        printString(s);
+*        **printString(s);** // call function printString
 
-        encrypt(s);
+*        **encrypt(s);** // call function encrypy the result will be input a output b
 
-    }
+*    **}**
 
-}
+* **}**
