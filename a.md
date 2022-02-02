@@ -1,8 +1,8 @@
 ## C Programming
 # Lecture Lab one
-* #include <stdio.h>**  >//header file that include input/output
+** #include <stdio.h>**  >//header file that include input/output
 
-* #include <stdlib.h>**  >//header file that include std lib
+** #include <stdlib.h>**  >//header file that include std lib
 
 *int main(){  >// main function*
 
@@ -86,7 +86,7 @@
 
 *
 
-*"Hello" = ['H','e','l','l','o','\0'] >// In Hello text there is '\0' at the last
+*"Hello" = ['H','e','l','l','o','\0'] >// In Hello text there is '\0' at the last*
 
 *
 
