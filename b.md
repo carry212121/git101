@@ -1,55 +1,61 @@
 # Lecture Lab two
 
-* #include<stdio.h>*
-* int main(){*
+* **#include<stdio.h>**
+* **int main(){**
 
-*int i = 0*
+### While loop
 
-while (i<10){
+* **int i = 0** > // give i start at 0
 
-    printf("%d\n",i);
+* **while (i<10){** > // while (condition that make it True)
 
-    i += 1;
-}
+*    **printf("%d\n",i);** > // print current value of i
 
-while(1){
+*    **i += 1;** > // give an i plus by one that means this loop print i ten round
+* **}**
 
-    ptintf("%d",i);
+* **while(1){** > // In this loop any conditions can pass (while True)
 
-    i += 1;
+*    **ptintf("%d",i);** > // print current value of i
 
-}
+*    **i += 1;** > // plus one to value i
 
-for(int i = 0;i<10;i++){
+* **}**
 
-    printf("%d",i);
+### For loop
 
-}
+* **for(int i = 0;i<10;i++){** > // as same as while loop
 
-int addTen(int x){
+*    **printf("%d",i);** > // print current value of i
 
-    printf("addTen x = %d\n",x);
+* **}**
 
-    x += 10;
+### Function 
 
-    printf("after added addTen x = %d\n",x);
+* **int addTen(int x){** > // another function that plus ten
 
-    return x;
+    **printf("addTen x = %d\n",x);** > // print a number before add ten
 
-}
+    **x += 10;** > // add ten
 
-int main(){
+    **printf("after added addTen x = %d\n",x);** > // print a number after add ten
 
-    int x = 100;
+    **return x;** > // return the final value in this function
 
-    int y = addTen(x);
+* **}**
+
+* **int main(){**
+
+*    **int x = 100;** // given value of x
+
+*    **int y = addTen(x);** > // call function addTen
     
-    for (;;){
+*    **for (;;){** > // Loop that any conditions can pass
 
-        printf("%d\n",y);
+*        **printf("%d\n",y);** > // print a value after use function addTen
 
-    }
+*    **}**
 
-}
+* **}**
 
-}
+* **}**
